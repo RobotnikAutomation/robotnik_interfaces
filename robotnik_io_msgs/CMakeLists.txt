@@ -4,7 +4,6 @@ project(robotnik_io_msgs)
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(geometry_msgs REQUIRED)
 
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -14,8 +13,11 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msgs/InputsOutputs.msg"
-  "msgs/NamedInputOutput.msg"
-  "msgs/NamedInputsOutputs.msg"
+  "msgs/AnalogIO.msg"
+  "msgs/DigitalIO.msg"
+
+  "srvs/SetDigitalOutput.srv"
+  "srvs/SetAnalogOutput.srv"
   DEPENDENCIES builtin_interfaces
 )
 

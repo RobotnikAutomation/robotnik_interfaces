@@ -1,4 +1,4 @@
-bool[] digital_inputs
-bool[] digital_outputs
-float32[] analog_inputs
-float32[] analog_outputs
+DigitalIO[] digital_inputs
+DigitalIO[] digital_outputs
+AnalogIO[] analog_inputs
+AnalogIO[] analog_outputs

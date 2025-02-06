@@ -1,0 +1,5 @@
+AnalogIO output
+---
+bool success
+string message
+

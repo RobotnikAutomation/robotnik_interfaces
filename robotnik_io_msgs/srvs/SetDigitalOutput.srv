@@ -1,0 +1,4 @@
+DigitalIO output
+---
+bool success
+string message
