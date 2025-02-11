@@ -13,6 +13,7 @@ set(msg_files
 set(srv_files
   "srv/AvailableKinematics.srv"
   "srv/ChangeKinematics.srv"
+  "srv/SetOdometry.srv"
 )
 
 set(action_files

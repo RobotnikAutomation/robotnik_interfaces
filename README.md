@@ -149,6 +149,7 @@ Messages used for the controller state and the kinematics changes
 |-------------------------	|-------------------	|-------------------------------------	|
 | AvailableKinematics.srv 	|                   	| bool success<br>string[] kinematics 	|
 | ChangeKinematics.srv    	| string kinematics 	| bool success<br>string message      	|
+| SetOdometry.srv    	| float32 x<br>float32 y<br>float32 z<br>float32 orientation 	| bool ret    	|
 
 ### robotnik_battery_msgs
 
