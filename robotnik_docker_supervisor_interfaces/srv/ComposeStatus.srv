@@ -1,0 +1,3 @@
+string stack_name
+---
+string status   # "running", "stopped", or "partial"
