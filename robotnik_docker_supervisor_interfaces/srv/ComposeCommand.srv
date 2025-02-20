@@ -1,0 +1,5 @@
+string stack_name
+string command  # Valid values: "up", "down", "stop", "restart" 
+---
+bool success
+string message
