@@ -1,0 +1,5 @@
+# Request is empty
+---
+bool success
+string message
+string[] stacks
