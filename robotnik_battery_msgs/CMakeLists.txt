@@ -9,8 +9,8 @@ find_package(rosidl_default_generators REQUIRED)
 set(msg_files
   "msg/BatteryStatus.msg"
   "msg/BatteryStatusStamped.msg"
-  "msg/DockingStatus.msg"
-  "msg/DockingStatusStamped.msg"
+  "msg/DockingStationStatus.msg"
+  "msg/DockingStationStatusStamped.msg"
   "msg/InverterStatus.msg"
   "msg/InverterStatusStamped.msg"
 )
