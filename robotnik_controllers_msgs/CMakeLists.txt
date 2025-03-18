@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_controller_msgs)
+project(robotnik_controllers_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
