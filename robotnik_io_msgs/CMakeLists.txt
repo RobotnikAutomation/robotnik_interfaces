@@ -12,12 +12,12 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msgs/InputsOutputs.msg"
-  "msgs/AnalogIO.msg"
-  "msgs/DigitalIO.msg"
+  "msg/InputsOutputs.msg"
+  "msg/AnalogIO.msg"
+  "msg/DigitalIO.msg"
 
-  "srvs/SetDigitalOutput.srv"
-  "srvs/SetAnalogOutput.srv"
+  "srv/SetDigitalOutput.srv"
+  "srv/SetAnalogOutput.srv"
   DEPENDENCIES builtin_interfaces
 )
 
