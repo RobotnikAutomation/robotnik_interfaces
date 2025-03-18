@@ -1,6 +1,0 @@
-string stack_name
-string container_name
-string command   # Valores válidos: "start" o "stop"
----
-bool success
-string message
