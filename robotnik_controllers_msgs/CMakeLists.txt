@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_std_msgs)
+project(robotnik_controllers_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
@@ -7,14 +7,13 @@ find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  "msg/BoolArray.msg"
-  "msg/Pose2DArray.msg"
-  "msg/Pose2DStamped.msg"
-  "msg/StringArray.msg"
-  "msg/StringStamped.msg"
+  "msg/ControllerState.msg"
 )
 
 set(srv_files
+  "srv/AvailableKinematics.srv"
+  "srv/ChangeKinematics.srv"
+  "srv/SetOdometry.srv"
 )
 
 set(action_files

@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="2">
   <name>robotnik_interfaces</name>
-  <version>0.0.1</version>
+  <version>0.2.0</version>
   <description>robotnik_interfaces contains messages, services and actions that are used by the Robotnik stack.</description>
 
   <maintainer email="mbosch@robotnik.es">Marc Bosch-Jorge</maintainer>
@@ -14,8 +14,11 @@
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>builtin_interfaces</exec_depend>
+  <exec_depend>robotnik_battery_msgs</exec_depend>
+  <exec_depend>robotnik_controllers_msgs</exec_depend>
   <exec_depend>robotnik_io_msgs</exec_depend>
   <exec_depend>robotnik_navigation_msgs</exec_depend>
+  <exec_depend>robotnik_safety_msgs</exec_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>

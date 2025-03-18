@@ -2,9 +2,8 @@
 float32 x
 # New robot Y position (m)
 float32 y
-# New robot Z position (m)
-float32 z
 # New robot Orientation (rads)
-float32 orientation
+float32 yaw
 ---
-bool ret
+bool success
+string message

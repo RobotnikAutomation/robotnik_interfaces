@@ -6,15 +6,21 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
+set(msg_files
+)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  # TODO(jwallace42): This is a work around for https://github.com/ros2/rosidl_typesupport_fastrtps/issues/28
-  add_compile_options(-Wno-error=deprecated)
-endif()
+set(srv_files
+)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
+set(action_files
   "action/Dock.action"
   "action/Move.action"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
   DEPENDENCIES builtin_interfaces geometry_msgs action_msgs
 )
 

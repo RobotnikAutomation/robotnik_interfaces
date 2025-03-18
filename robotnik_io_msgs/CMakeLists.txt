@@ -5,19 +5,24 @@ find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+set(msg_files
+  "msg/InputsOutputs.msg"
+  "msg/AnalogIO.msg"
+  "msg/DigitalIO.msg"
+)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  # TODO(jwallace42): This is a work around for https://github.com/ros2/rosidl_typesupport_fastrtps/issues/28
-  add_compile_options(-Wno-error=deprecated)
-endif()
+set(srv_files
+  "srv/SetDigitalOutput.srv"
+  "srv/SetAnalogOutput.srv"
+)
+
+set(action_files
+)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msgs/InputsOutputs.msg"
-  "msgs/AnalogIO.msg"
-  "msgs/DigitalIO.msg"
-
-  "srvs/SetDigitalOutput.srv"
-  "srvs/SetAnalogOutput.srv"
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
   DEPENDENCIES builtin_interfaces
 )
 
