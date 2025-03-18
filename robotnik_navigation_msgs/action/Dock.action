@@ -6,7 +6,7 @@ geometry_msgs/Twist maximum_velocity
 ---
 # result
 bool success
-string description
+string message
 ---
 # feedback
 geometry_msgs/Pose2D remaining
