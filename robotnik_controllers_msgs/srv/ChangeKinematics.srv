@@ -1,4 +1,4 @@
-string kinematics
+string name
 ---
 bool success
 string message
