@@ -1,0 +1,5 @@
+string stack
+---
+bool success
+string message
+string[] modules
