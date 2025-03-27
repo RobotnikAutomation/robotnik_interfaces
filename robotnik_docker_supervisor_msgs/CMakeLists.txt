@@ -8,13 +8,16 @@ find_package(builtin_interfaces REQUIRED)
 
 # List service files
 set(srv_files
-  "srv/GetComposeList.srv"
-  "srv/ComposeCommand.srv"
-  "srv/ComposeCommandAll.srv"
-  "srv/ComposeStatus.srv"
-  "srv/ComposeLogs.srv"
-  "srv/GetContainerList.srv"        
-  "srv/ContainerCommand.srv"
+  "srv/DownStack.srv"
+  "srv/GetModuleList.srv"
+  "srv/GetStackList.srv"
+  "srv/GetStackLogs.srv"
+  "srv/GetStackStatus.srv"
+  "srv/RestartStack.srv"
+  "srv/StartModule.srv"
+  "srv/StartStack.srv"
+  "srv/StopModule.srv"
+  "srv/StopStack.srv"
 )
 
 # Generate the ROS2 interfaces

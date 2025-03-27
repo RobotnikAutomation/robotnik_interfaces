@@ -1,5 +1,5 @@
 string stack
+string module
 ---
 bool success
 string message
-string[] containers
