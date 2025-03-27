@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
-<package format="2">
+<package format="3">
   <name>robotnik_interfaces</name>
-  <version>0.2.0</version>
+  <version>0.3.0</version>
   <description>robotnik_interfaces contains messages, services and actions that are used by the Robotnik stack.</description>
 
   <maintainer email="mbosch@robotnik.es">Marc Bosch-Jorge</maintainer>
