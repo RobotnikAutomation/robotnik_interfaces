@@ -24,6 +24,11 @@ Interfaces used by the power systems of the robots.
 Interfaces used by the Robotnik controllers:
 - https://github.com/RobotnikAutomation/robotnik_controllers
 
+### robotnik_supervisor_msgs
+
+Interfaces to manage Robotnik stacks and modules. Used by
+- https://github.com/RobotnikAutomation/robotnik_docker_supervisor
+
 ### robotnik_io_msgs
 
 Interfaces to read and write analog and digital inputs and outputs.
