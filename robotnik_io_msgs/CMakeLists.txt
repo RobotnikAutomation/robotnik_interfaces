@@ -12,6 +12,8 @@ set(msg_files
 )
 
 set(srv_files
+  "srv/ModbusRead.srv"
+  "srv/ModbusWrite.srv"
   "srv/SetDigitalOutput.srv"
   "srv/SetAnalogOutput.srv"
 )

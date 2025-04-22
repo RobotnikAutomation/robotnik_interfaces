@@ -1,0 +1,35 @@
+# Request structure to perform a Modbus "read" operation on a device.
+
+# Modbus function code defining the type of read operation.
+# Available function codes include:
+#   1 - Read Output Coils
+#   2 - Read Discrete Inputs
+#   3 - Read Holding Registers
+#   4 - Read Input Registers
+uint8 function_code
+
+# Starting address (zero-based) in the Modbus memory map to begin reading.
+uint16 starting_address
+
+# Number of values to read starting from the address specified.
+# This should conform to the limits defined by the specific function code.
+uint16 quantity
+
+
+
+---
+
+# Response structure returned after a Modbus read request.
+
+# Indicates whether the read operation completed successfully.
+bool success
+
+# If the request failed (success == false), this field contains a
+# human-readable explanation or Modbus exception reason.
+string error_message
+
+# The data values read from the device.
+# Interpretation depends on the function code:
+#   - For functions 1 or 2 (coils/discrete inputs), each value is typically 0 or 1.
+#   - For functions 3 or 4, values are 16-bit register contents.
+uint16[] data
