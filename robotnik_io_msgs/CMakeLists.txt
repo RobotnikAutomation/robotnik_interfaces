@@ -9,6 +9,8 @@ set(msg_files
   "msg/InputsOutputs.msg"
   "msg/AnalogIO.msg"
   "msg/DigitalIO.msg"
+  "msg/ModbusExceptionCode.msg"
+  "msg/ModbusFunctionCode.msg"
 )
 
 set(srv_files

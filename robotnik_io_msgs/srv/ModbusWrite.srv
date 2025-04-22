@@ -1,20 +1,19 @@
 # Request structure to perform a Modbus "write" operation on a device.
 
 # Modbus function code defining the type of write operation.
-# Available function codes include:
-#   5  - Write Output Coil
-#   6  - Write Holding Register
+# Use values from ModbusFunctionCode.msg:
+#   5  - Write Single Coil
+#   6  - Write Single Holding Register
 #   15 - Write Multiple Coils
-#   16 - Write Multiple Holding Register
+#   16 - Write Multiple Holding Registers
 uint8 function_code
 
 # Starting address (zero-based) in the Modbus memory map to begin writing.
 uint16 starting_address
 
 # Values to be written to the device.
-# Interpretation depends on the function code:
-#   - For coils/: each value should be 0 (OFF) or any non-zero value (ON).
-#   - For registers: 16-bit unsigned integers
+# For coils: each value should be 0 (OFF) or non-zero (ON).
+# For registers: 16-bit unsigned integers.
 uint16[] data
 
 ---
@@ -27,3 +26,6 @@ bool success
 # If the request failed (success == false), this field contains a
 # human-readable explanation or Modbus exception reason.
 string error_message
+
+# Optional Modbus exception code (structured error info)
+uint8 exception_code
