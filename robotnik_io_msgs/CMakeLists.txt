@@ -9,15 +9,16 @@ set(msg_files
   "msg/InputsOutputs.msg"
   "msg/AnalogIO.msg"
   "msg/DigitalIO.msg"
-  "msg/ModbusExceptionCode.msg"
-  "msg/ModbusFunctionCode.msg"
+  "msg/RegisterArray.msg"
+  "msg/Register.msg"
 )
 
 set(srv_files
-  "srv/ModbusRead.srv"
+  "srv/GetRegisters.srv"
   "srv/ModbusWrite.srv"
   "srv/SetDigitalOutput.srv"
   "srv/SetAnalogOutput.srv"
+  "srv/SetRegisters.srv"
 )
 
 set(action_files
