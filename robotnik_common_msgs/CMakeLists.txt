@@ -10,9 +10,11 @@ set(msg_files
 )
 
 set(srv_files
-)
-
-set(action_files
+  "srv/SetBool.srv"
+  "srv/SetFloat32.srv"
+  "srv/SetFloat64.srv"
+  "srv/SetInt32.srv"
+  "srv/SetString.srv"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
