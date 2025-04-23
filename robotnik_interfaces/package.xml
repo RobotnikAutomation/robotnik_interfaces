@@ -3,18 +3,17 @@
 <package format="3">
   <name>robotnik_interfaces</name>
   <version>0.3.0</version>
-  <description>robotnik_interfaces contains messages, services and actions that are used by the Robotnik stack.</description>
+  <description>Metapackage of message definitions for the Robotnik stack</description>
 
-  <maintainer email="mbosch@robotnik.es">Marc Bosch-Jorge</maintainer>
-
-  <license>Apache License 2.0</license>
-
-  <author email="mbosch@robotnik.es">Marc Bosch-Jorge</author>
+  <maintainer email="support@robotnik.es">Robotnik Automation</maintainer>
+  <license>BSD</license>
+  <author email="info@robotnik.es">Robotnik Automation</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>builtin_interfaces</exec_depend>
   <exec_depend>robotnik_battery_msgs</exec_depend>
+  <exec_depend>robotnik_common_msgs</exec_depend>
   <exec_depend>robotnik_controllers_msgs</exec_depend>
   <exec_depend>robotnik_io_msgs</exec_depend>
   <exec_depend>robotnik_navigation_msgs</exec_depend>
