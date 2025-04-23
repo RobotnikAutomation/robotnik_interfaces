@@ -1,13 +1,15 @@
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.5)
 project(robotnik_supervisor_msgs)
 
-# Find necessary packages
 find_package(ament_cmake REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
 find_package(robotnik_common_msgs REQUIRED)
 
-# List service files
+set(msg_files
+)
+
 set(srv_files
   "srv/DownStack.srv"
   "srv/GetModuleList.srv"
@@ -21,13 +23,19 @@ set(srv_files
   "srv/StopStack.srv"
 )
 
-# Generate the ROS2 interfaces
-rosidl_generate_interfaces(${PROJECT_NAME}
-  ${srv_files}
-  DEPENDENCIES builtin_interfaces robotnik_common_msgs
+set(action_files
 )
 
-# Export runtime dependencies
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  DEPENDENCIES
+    builtin_interfaces
+    robotnik_common_msgs
+  ADD_LINTER_TESTS
+)
+
 ament_export_dependencies(rosidl_default_runtime)
 
 if(BUILD_TESTING)

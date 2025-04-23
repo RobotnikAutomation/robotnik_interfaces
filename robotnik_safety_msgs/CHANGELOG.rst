@@ -4,3 +4,4 @@ Changelog for package robotnik_safety_msgs
 
 1.0.0 (2025-04-23)
 ------------------
+* Initial release
