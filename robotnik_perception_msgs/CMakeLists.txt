@@ -1,26 +1,22 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_navigation_msgs)
+project(robotnik_perception_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
-find_package(action_msgs REQUIRED)
-find_package(robotnik_common_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
-set(srv_files
-)
-
-set(action_files
-  "action/Dock.action"
-  "action/Move.action"
+set(msg_files
+  "msg/Detection.msg"
+  "msg/DetectionArray.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES builtin_interfaces geometry_msgs action_msgs robotnik_common_msgs
+  DEPENDENCIES builtin_interfaces geometry_msgs std_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)
