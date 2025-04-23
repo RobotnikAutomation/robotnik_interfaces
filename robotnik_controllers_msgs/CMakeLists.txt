@@ -2,9 +2,10 @@ cmake_minimum_required(VERSION 3.5)
 project(robotnik_controllers_msgs)
 
 find_package(ament_cmake REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(robotnik_common_msgs REQUIRED)
 
 set(msg_files
   "msg/ControllerState.msg"
@@ -24,8 +25,9 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${srv_files}
   ${action_files}
   DEPENDENCIES
-  geometry_msgs
+  builtin_interfaces
   std_msgs
+  robotnik_common_msgs
   ADD_LINTER_TESTS
 )
 

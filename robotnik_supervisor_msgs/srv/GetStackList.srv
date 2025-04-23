@@ -1,5 +1,4 @@
 # Request is empty
 ---
-bool success
-string message
+robotnik_common_msgs/Response response
 string[] stacks

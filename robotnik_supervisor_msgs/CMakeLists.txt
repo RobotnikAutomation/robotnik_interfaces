@@ -5,6 +5,7 @@ project(robotnik_supervisor_msgs)
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(robotnik_common_msgs REQUIRED)
 
 # List service files
 set(srv_files
@@ -23,7 +24,7 @@ set(srv_files
 # Generate the ROS2 interfaces
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${srv_files}
-  DEPENDENCIES builtin_interfaces
+  DEPENDENCIES builtin_interfaces robotnik_common_msgs
 )
 
 # Export runtime dependencies
