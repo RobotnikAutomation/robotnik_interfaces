@@ -6,14 +6,21 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  "msg/InputsOutputs.msg"
   "msg/AnalogIO.msg"
   "msg/DigitalIO.msg"
+  "msg/InputsOutputs.msg"
+  "msg/RegisterArray.msg"
+  "msg/Register.msg"
 )
 
 set(srv_files
-  "srv/SetDigitalOutput.srv"
+  "srv/GetRegisters.srv"
+  "srv/ModbusWrite.srv"
   "srv/SetAnalogOutput.srv"
+  "src/SetAnalogOutputArray.srv"
+  "srv/SetDigitalOutput.srv"
+  "srv/SetDigitalOutputArray.srv"
+  "srv/SetRegisters.srv"
 )
 
 set(action_files

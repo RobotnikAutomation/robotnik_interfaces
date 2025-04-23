@@ -1,0 +1,4 @@
+Register[] registers
+---
+bool success
+string message
