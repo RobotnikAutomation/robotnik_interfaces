@@ -15,9 +15,8 @@ set(msg_files
 
 set(srv_files
   "srv/GetRegisters.srv"
-  "srv/ModbusWrite.srv"
   "srv/SetAnalogOutput.srv"
-  "src/SetAnalogOutputArray.srv"
+  "srv/SetAnalogOutputArray.srv"
   "srv/SetDigitalOutput.srv"
   "srv/SetDigitalOutputArray.srv"
   "srv/SetRegisters.srv"
