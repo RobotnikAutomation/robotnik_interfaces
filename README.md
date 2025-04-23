@@ -66,21 +66,24 @@ This repository follows the ROS convention for interface packages:
   - MAJOR: changing or removing an existing field, big adding of new interfaces (i.e. API break, requires modify existing software).
   - MINOR: adding a new field, adding comments to message definitions (i.e. no API break, just requires rebuilding software).
   - PATCH: changes in changelog, licenses, etc.
+- CMakeLists.txt, package.xml must follow `robotnik_common_msgs` structure.
 
 ## How to add new messages
 
-All message definitions must follow the ROS message definition format. The following rules must be followed:
-- All messages must be defined in the *package*/msg folder.
-
+All message definitions must follow the ROS message definition format.
 
 ## How to add new services
 
 All service responses must return information about the result of the service call, by including the fields:
-- bool success
-- string message
+- robotnik_common_msgs/Response response
+which contains:
+  - bool success. Required, indicates if the service call was successful.
+  - string message. Optional if success is true, but required if success is false. It should contain a human-readable message with the reason of the failure.
 
 ## How to add new actions
 
 All action results must return information about the result of the service call, by including the fields:
-- bool success
-- string message
+- robotnik_common_msgs/Response response
+which contains:
+  - bool success. Required, indicates if the action call was successful.
+  - string message. Optional if success is true, but required if success is false. It should contain a human-readable message with the reason of the failure.
