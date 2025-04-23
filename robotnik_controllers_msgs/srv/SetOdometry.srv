@@ -5,5 +5,4 @@ float32 y
 # New robot Orientation (rads)
 float32 yaw
 ---
-bool success
-string message
+robotnik_common_msgs/Response response

@@ -6,6 +6,7 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(action_msgs REQUIRED)
+find_package(robotnik_common_msgs REQUIRED)
 
 set(msg_files
   msg/PoseStampedArray.msg
@@ -23,7 +24,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
   ${action_files}
-  DEPENDENCIES builtin_interfaces geometry_msgs action_msgs
+  DEPENDENCIES builtin_interfaces geometry_msgs action_msgs robotnik_common_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)

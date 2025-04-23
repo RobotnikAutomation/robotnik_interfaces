@@ -1,4 +1,3 @@
 Register[] registers
 ---
-bool success
-string message
+robotnik_common_msgs/Response response
