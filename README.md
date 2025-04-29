@@ -50,6 +50,9 @@ Interfaces for the Robontiks Safety system of:
 Interfaces to manage Robotnik stacks and modules. Used by
 - https://github.com/RobotnikAutomation/robotnik_docker_supervisor
 
+### robotnik_manipulation_msgs
+
+Interfaces to manage ur_interepreter of Robotnik Manipulation Packages
 
 ## How to add a new interface
 

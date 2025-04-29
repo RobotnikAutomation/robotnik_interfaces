@@ -1,0 +1,12 @@
+# Goal
+string command
+---
+# Result
+string command
+bool success
+string description
+int16 code
+---
+# Feedback
+string command
+string description
