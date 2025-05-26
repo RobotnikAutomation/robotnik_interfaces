@@ -8,7 +8,7 @@
   <description>Message definitions for the Robotnik Navigation Stack</description>
 
   <maintainer email="support@robotnik.es">Robotnik Automation</maintainer>
-  <license>BSD-1-Clause</license>
+  <license>BSD-3-Clause</license>
   <author email="info@robotnik.es">Robotnik Automation</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
