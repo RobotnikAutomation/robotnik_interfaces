@@ -18,6 +18,8 @@ set(srv_files
 set(action_files
   "action/Dock.action"
   "action/Move.action"
+  "action/Charge.action"
+  "action/Uncharge.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
