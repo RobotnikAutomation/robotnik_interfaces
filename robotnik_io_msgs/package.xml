@@ -4,7 +4,7 @@
   schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>robotnik_io_msgs</name>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <description>Message definitions for the Robotnik I/O stack</description>
 
   <maintainer email="support@robotnik.es">Robotnik Automation</maintainer>
