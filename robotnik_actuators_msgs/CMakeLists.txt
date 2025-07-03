@@ -4,6 +4,7 @@ project(robotnik_actuators_msgs)
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(robotnik_common_msgs REQUIRED)
 
 set(msg_files
   "msg/Ptz.msg"
@@ -22,6 +23,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   DEPENDENCIES
     builtin_interfaces
+    robotnik_common_msgs
   ADD_LINTER_TESTS
 )
 
