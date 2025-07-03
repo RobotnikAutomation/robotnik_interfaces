@@ -6,6 +6,8 @@ find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
+  "msg/LaserStatus.msg"
+  "msg/SafetyModeStatus.msg"
 )
 
 set(srv_files
@@ -14,14 +16,14 @@ set(srv_files
 set(action_files
 )
 
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   ${msg_files}
-#   ${srv_files}
-#   ${action_files}
-#   DEPENDENCIES
-#     builtin_interfaces
-#   ADD_LINTER_TESTS
-# )
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  DEPENDENCIES
+    builtin_interfaces
+  ADD_LINTER_TESTS
+)
 
 ament_export_dependencies(rosidl_default_runtime)
 
