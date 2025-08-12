@@ -7,6 +7,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
   "msg/Response.msg"
+  "msg/StringArray.msg"
 )
 
 set(srv_files
