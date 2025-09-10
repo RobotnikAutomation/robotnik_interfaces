@@ -2,6 +2,9 @@
 Changelog for package robotnik_safety_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* WIP
 1.1.0 (2025-06-20)
 ------------------
 
