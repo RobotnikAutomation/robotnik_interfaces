@@ -11,6 +11,10 @@ This repository has been designed to contain the most common messages used betwe
 
 ## Interface packages
 
+### robotnik_actuators_msgs
+
+Interfaces used by the actuators of the robots.
+
 ### robotnik_battery_msgs
 
 Interfaces used by the power systems of the robots.
@@ -44,6 +48,10 @@ Message definitions for the Robotnik Perception Stack.
 
 Interfaces for the Robontiks Safety system of:
 - https://github.com/RobotnikAutomation/safety_module
+
+### robotnik_sensors_msgs
+
+Interfaces used by the sensors of the robots.
 
 ### robotnik_supervisor_msgs
 
