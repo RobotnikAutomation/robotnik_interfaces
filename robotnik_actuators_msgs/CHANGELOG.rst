@@ -1,5 +1,6 @@
+
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package robotnik_safety_msgs
+Changelog for package robotnik_actuators_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forthcoming

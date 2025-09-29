@@ -1,0 +1,7 @@
+robotnik_actuators_msgs/Ptz ptz
+---
+robotnik_common_msgs/Response response
+---
+float32 remaining_pan
+float32 remaining_tilt
+float32 remaining_zoom
