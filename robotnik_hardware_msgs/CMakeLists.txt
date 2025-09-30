@@ -1,21 +1,16 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_common_msgs)
+project(robotnik_hardware_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
-  "msg/Response.msg"
-  "msg/StringArray.msg"
+  "msg/MotorStatus.msg"
+  "msg/MotorStatusArray.msg"
 )
 
 set(srv_files
-  "srv/SetBool.srv"
-  "srv/SetFloat32.srv"
-  "srv/SetFloat64.srv"
-  "srv/SetInt32.srv"
-  "srv/SetString.srv"
 )
 
 set(action_files
