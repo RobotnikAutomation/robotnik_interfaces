@@ -14,6 +14,7 @@ set(msg_files
 )
 
 set(srv_files
+  "srv/GetURTransform.srv"
 )
 
 set(action_files
