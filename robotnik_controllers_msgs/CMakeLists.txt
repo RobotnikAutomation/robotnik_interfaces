@@ -7,9 +7,12 @@ find_package(rosidl_default_generators REQUIRED)
 
 find_package(robotnik_common_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 set(msg_files
   "msg/ControllerState.msg"
+  "msg/DebugInfo.msg"
 )
 
 set(srv_files
@@ -29,6 +32,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
     builtin_interfaces
     robotnik_common_msgs
     std_msgs
+    sensor_msgs
+    geometry_msgs
   ADD_LINTER_TESTS
 )
 
