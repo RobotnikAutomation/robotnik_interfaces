@@ -7,6 +7,8 @@ string MODE_AUTO_HW=automatic_hw
 string MODE_AUTO_SW=automatic_sw
 # Unattended relay detection & and manual activation of the charging relay
 string MODE_MANUAL_SW=manual_sw
+# Unattended relay detection & activation with no inputs/outputs feedback. Done by the hw. This can be enabled/disabled by sw
+string MODE_OPTA=opta
 
 string operation_mode
 
