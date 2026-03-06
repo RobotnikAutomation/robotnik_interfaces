@@ -3,9 +3,12 @@ project(robotnik_common_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
+find_package(lifecycle_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 set(msg_files
+	"msg/State.msg"
+	"msg/NodeState.msg"
   "msg/Response.msg"
   "msg/StringArray.msg"
 )
@@ -27,6 +30,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   DEPENDENCIES
     builtin_interfaces
+		lifecycle_msgs
   ADD_LINTER_TESTS
 )
 

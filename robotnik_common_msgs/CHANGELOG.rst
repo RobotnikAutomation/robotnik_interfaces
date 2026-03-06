@@ -2,6 +2,10 @@
 Changelog for package robotnik_common_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (2026-01-3)
+------------------
+* Add State.msg and StateNode.msg
+
 1.1.0 (2025-06-20)
 ------------------
 
