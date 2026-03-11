@@ -1,0 +1,2 @@
+unique_identifier_msgs/UUID command_id
+builtin_interfaces/Time stamp
