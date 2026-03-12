@@ -1,0 +1,4 @@
+# Empty request
+---
+CommandInfo[] available_commands
+robotnik_common_msgs/Response response

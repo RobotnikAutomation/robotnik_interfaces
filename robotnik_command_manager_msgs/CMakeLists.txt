@@ -20,6 +20,8 @@ set(srv_files
   "srv/CancelCommand.srv"
   "srv/GetFeedback.srv"
   "srv/GetResult.srv"
+  "srv/GetAvailableCommands.srv"
+  "srv/GetRunningCommands.srv"
 )
 
 set(action_files
