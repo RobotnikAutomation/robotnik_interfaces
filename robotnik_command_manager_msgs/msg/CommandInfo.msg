@@ -1,4 +1,3 @@
 string command_id
 string command_data
-string goal_arguments
 builtin_interfaces/Time stamp

@@ -9,7 +9,9 @@ find_package(unique_identifier_msgs REQUIRED)
 
 set(msg_files
   "msg/Command.msg"
+  "msg/CommandArg.msg"
   "msg/CommandInfo.msg"
+  "msg/CommandSpec.msg"
   "msg/Feedback.msg"
   "msg/Result.msg"
 )
