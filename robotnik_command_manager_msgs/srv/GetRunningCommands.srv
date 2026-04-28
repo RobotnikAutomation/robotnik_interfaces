@@ -1,4 +1,3 @@
 # Empty request
 ---
 CommandInfo[] running_commands
-robotnik_common_msgs/Response response
