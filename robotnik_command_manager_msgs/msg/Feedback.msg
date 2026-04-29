@@ -1,0 +1,2 @@
+CommandInfo command
+string data
