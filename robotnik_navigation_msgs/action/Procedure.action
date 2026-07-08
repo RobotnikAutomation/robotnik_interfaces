@@ -1,0 +1,14 @@
+string dock_frame
+string robot_dock_frame
+float32 dock_offset
+int8 retries
+string command
+string parameters
+---
+robotnik_common_msgs/Response response
+---
+int8 try_number
+string status
+geometry_msgs/Pose2D remaining_distance
+float32 time_in_action
+float32 time_in_step

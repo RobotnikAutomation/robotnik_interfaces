@@ -20,6 +20,7 @@ set(action_files
   "action/Move.action"
   "action/Charge.action"
   "action/Uncharge.action"
+  "action/Procedure.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}

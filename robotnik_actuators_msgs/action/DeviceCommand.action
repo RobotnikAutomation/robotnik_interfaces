@@ -1,0 +1,9 @@
+# goal
+string command
+string parameters
+---
+# result
+robotnik_common_msgs/Response response
+---
+# feedback
+string status

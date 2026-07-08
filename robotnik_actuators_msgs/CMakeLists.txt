@@ -15,6 +15,7 @@ set(srv_files
 
 set(action_files
   "action/SetPtz.action"
+  "action/DeviceCommand.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
