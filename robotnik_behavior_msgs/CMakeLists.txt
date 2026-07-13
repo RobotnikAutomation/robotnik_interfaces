@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_navigation_msgs)
+project(robotnik_behavior_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
@@ -16,10 +16,9 @@ set(srv_files
 )
 
 set(action_files
-  "action/Dock.action"
-  "action/Move.action"
   "action/Charge.action"
   "action/Uncharge.action"
+  "action/Procedure.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
