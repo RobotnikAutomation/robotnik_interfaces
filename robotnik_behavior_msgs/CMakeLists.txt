@@ -1,21 +1,24 @@
 cmake_minimum_required(VERSION 3.5)
-project(robotnik_actuators_msgs)
+project(robotnik_behavior_msgs)
 
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+
+find_package(action_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 find_package(robotnik_common_msgs REQUIRED)
 
 set(msg_files
-  "msg/Ptz.msg"
 )
 
 set(srv_files
 )
 
 set(action_files
-  "action/SetPtz.action"
-  "action/DeviceCommand.action"
+  "action/Charge.action"
+  "action/Uncharge.action"
+  "action/Procedure.action"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -24,6 +27,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   DEPENDENCIES
     builtin_interfaces
+    action_msgs
+    geometry_msgs
     robotnik_common_msgs
   ADD_LINTER_TESTS
 )
