@@ -15,6 +15,9 @@ bool is_robot_stopped
 # Wheel alignment gate used by steering controllers.
 bool wheels_aligned
 
+# Global traction scaling factor applied by steering alignment logic.
+float64 traction_scale
+
 # Control loop period in seconds.
 float64 control_period
 
