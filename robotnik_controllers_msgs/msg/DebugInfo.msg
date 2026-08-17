@@ -18,6 +18,9 @@ bool wheels_aligned
 # Global traction scaling factor applied by steering alignment logic.
 float64 traction_scale
 
+# Maximum steering orientation error used to compute traction scaling (rad).
+float64 max_orientation_error
+
 # Control loop period in seconds.
 float64 control_period
 
