@@ -21,6 +21,12 @@ float64 traction_scale
 # Maximum steering orientation error used to compute traction scaling (rad).
 float64 max_orientation_error
 
+# Normalised twist-coherence error (0 = all wheels geometrically compatible).
+float64 twist_coherence_error
+
+# Scale factor derived from twist_coherence_error (1 = fully coherent, 0 = incoherent).
+float64 twist_coherence_scale
+
 # Control loop period in seconds.
 float64 control_period
 
