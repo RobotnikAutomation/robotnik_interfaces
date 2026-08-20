@@ -18,6 +18,12 @@ bool wheels_aligned
 # Global traction scaling factor applied by steering alignment logic.
 float64 traction_scale
 
+# Traction scale from wheel orientation alignment (cosine ramp between min/max error).
+float64 alignment_traction_scale
+
+# Traction gate applied when starting from rest (0 or 1).
+float64 stopped_traction_scale
+
 # Maximum steering orientation error used to compute traction scaling (rad).
 float64 max_orientation_error
 
@@ -79,14 +85,4 @@ sensor_msgs/JointState s81_control_feedback_wheel_states
 
 # Measured wheel states from hardware interfaces.
 sensor_msgs/JointState s82_measured_wheel_states
-
-# Per-wheel selected steering alignment tolerance.
-# Order is aligned with steering_alignment_mode_per_wheel and steering_alignment_mode_id_per_wheel.
-float64[] steering_alignment_range_per_wheel
-
-# Per-wheel source used to select the alignment tolerance ("velocity" or "icr").
-string[] steering_alignment_mode_per_wheel
-
-# Per-wheel source encoded as integer for plotting (0=velocity, 1=icr).
-int32[] steering_alignment_mode_id_per_wheel
 
