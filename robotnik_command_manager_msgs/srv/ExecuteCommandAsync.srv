@@ -1,3 +1,5 @@
 Command command
 ---
 CommandInfo command
+bool success
+string message

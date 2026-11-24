@@ -15,6 +15,7 @@
 
   <exec_depend>builtin_interfaces</exec_depend>
   <exec_depend>robotnik_battery_msgs</exec_depend>
+  <exec_depend>robotnik_command_manager_msgs</exec_depend>
   <exec_depend>robotnik_common_msgs</exec_depend>
   <exec_depend>robotnik_controllers_msgs</exec_depend>
   <exec_depend>robotnik_io_msgs</exec_depend>

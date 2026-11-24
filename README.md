@@ -19,6 +19,10 @@ Interfaces used by the actuators of the robots.
 
 Interfaces used by the power systems of the robots.
 
+### robotnik_command_manager_msgs
+
+ROS 2 interfaces for Command Manager API 2.0.
+
 ### robotnik_common_msgs
 
 Message definitions for common stuff in the Robotnik robots.

@@ -4,12 +4,9 @@ project(robotnik_command_manager_msgs)
 find_package(ament_cmake REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
-find_package(robotnik_common_msgs REQUIRED)
-find_package(unique_identifier_msgs REQUIRED)
 
 set(msg_files
   "msg/Command.msg"
-  "msg/CommandArg.msg"
   "msg/CommandInfo.msg"
   "msg/CommandSpec.msg"
   "msg/Feedback.msg"
@@ -36,8 +33,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   ${action_files}
   DEPENDENCIES
     builtin_interfaces
-    robotnik_common_msgs
-    unique_identifier_msgs
   ADD_LINTER_TESTS
 )
 
