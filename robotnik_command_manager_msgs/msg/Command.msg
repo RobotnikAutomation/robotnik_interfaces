@@ -1,2 +1,2 @@
 string command_name
-string args
+string data
