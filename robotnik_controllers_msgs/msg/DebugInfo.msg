@@ -15,6 +15,17 @@ bool is_robot_stopped
 # Wheel alignment gate used by steering controllers.
 bool wheels_aligned
 
+# Maximum steering orientation error used to compute traction scaling (rad).
+float64 max_steering_error
+
+# Normalised twist-coherence error (0 = all wheels geometrically compatible).
+float64 twist_coherence_error
+
+# Raw signed determinants for wheel triplets in lexicographic wheel-name order.
+# For four wheels: (0,1,2), (0,1,3), (0,2,3), (1,2,3).
+# Empty when coherence scaling is disabled or not applicable.
+float64[] twist_coherence_determinants
+
 # Global traction scaling factor applied by steering alignment logic.
 float64 traction_scale
 
@@ -23,12 +34,6 @@ float64 alignment_traction_scale
 
 # Traction gate applied when starting from rest (0 or 1).
 float64 stopped_traction_scale
-
-# Maximum steering orientation error used to compute traction scaling (rad).
-float64 max_orientation_error
-
-# Normalised twist-coherence error (0 = all wheels geometrically compatible).
-float64 twist_coherence_error
 
 # Scale factor derived from twist_coherence_error (1 = fully coherent, 0 = incoherent).
 float64 twist_coherence_scale
